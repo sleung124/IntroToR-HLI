@@ -4,11 +4,11 @@ author: "HLI Bioinformatics Committee"
 output: html_document
 ---
 
-## Intro to R
+# Intro to R
 
 This R Markdown file walks through some of the basics of R, like data types, simple functions, and how to work with your first bits of code. It’s meant to be a quick, beginner-friendly guide to help you get comfortable using R!
 
-### The basics
+## The basics
 
 R is a computer language made for working with data. It is used to organize information, perform calculations, and create visualizations. Think of it as a powerful calculator mixed with a toolbox for exploring and visualizing data.
 
@@ -17,15 +17,16 @@ Below is an R codechunk. We can write R instructions for the computer to execute
 ```{r First CodeChunk}
 print("Hello World!")
 ```
+
 In R, there are common data types that we work with:
 
-- Numeric: numbers (e.g., 3.14, 42)
+-   Numeric: numbers (e.g., 3.14, 42)
 
-- Character: text or strings (e.g., "hello")
+-   Character: text or strings (e.g., "hello")
 
-- Logical: true/false values (e.g., TRUE, FALSE)
+-   Logical: true/false values (e.g., TRUE, FALSE)
 
-- Factor: categories or labels (e.g., "male", "female")
+-   Factor: categories or labels (e.g., "male", "female")
 
 We can store data inside variables, which when run later, will output the value stored within it
 
@@ -83,10 +84,9 @@ print(people)
 str(people)
 ```
 
+## Insurance Dataset
 
-### Insurance Dataset
-
-Now that we have a grasp of basic R data types, let's learn how to work with them. In the same directory as this RMarkdown file, we work with the `insurance.csv` dataset, which contains metadata information about a person and their insurance charges. Using this dataset, we'll work through some examples of how to explore this dataset using R. 
+Now that we have a grasp of basic R data types, let's learn how to work with them. In the same directory as this RMarkdown file, we work with the `insurance.csv` dataset, which contains metadata information about a person and their insurance charges. Using this dataset, we'll work through some examples of how to explore this dataset using R.
 
 Firstly, we'll have to read in our data. We can do this through the `read.csv` function:
 
